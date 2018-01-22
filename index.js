@@ -1,4 +1,8 @@
 require('./globals.js')
+var http = require('stream-http')
+var crypto = require('react-native-crypto')
+global.crypto = crypto
+global.http = http
 
 exports.assert						= require('assert/');
 exports.buffer						= require('buffer/');
