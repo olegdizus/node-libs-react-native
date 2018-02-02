@@ -1,6 +1,10 @@
+if(typeof global.self === "undefined")
+{
+    global.self = global;
+}
 global.Buffer = require('buffer').Buffer;
 global.process = require('process');
-global.http = require('stream-http');
+global.http = require('http')
 
 // Needed so that 'stream-http' chooses the right default protocol.
 global.location = {
